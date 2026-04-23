@@ -9,8 +9,8 @@ app.use(cors());
 app.use('/uploads', express.static('uploads'));
 
 // 🔗 CONNECT DATABASE
-mongoose.connect("YOUR_MONGODB_URI")
-.then(()=>console.log("MongoDB Connected"))
+mongoose.connect(process.env.MONGO_URI)
+.then(()=>console.log("MONGO_URI:", process.env.MONGO_URI))
 .catch(err=>console.log(err));
 
 // 📦 MODEL
