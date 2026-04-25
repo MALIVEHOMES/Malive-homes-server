@@ -78,7 +78,7 @@ app.get('/add-sample', async (req, res) => {
             title: "2 Bedroom Apartment",
             location: "Nairobi",
             price: 45000,
-            image: "uploads/sample.jpg"
+            image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
         });
 
         await sample.save();
